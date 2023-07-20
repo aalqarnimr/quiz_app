@@ -10,17 +10,17 @@ class ResultScreen extends StatelessWidget {
   final String currentLanguage;
 
   List<Map<String, Object>> getSummeryData() {
-    List<Map<String, Object>> summery = [];
+    List<Map<String, Object>> summary1 = [];
 
     for (var i = 0; i < selectedAnswers.length; i++) {
-      summery.add({
+      summary1.add({
         "question_index": i,
         "question": questions[currentLanguage]![i].text,
         "correct_answer": questions[currentLanguage]![i].answers[0],
         "chosen_answer": selectedAnswers[i],
       });
     }
-    return summery;
+    return summary1;
   }
 
   @override
