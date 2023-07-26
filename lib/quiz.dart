@@ -37,7 +37,7 @@ class _QuizState extends State<Quiz> {
   void registerAnswer(String answer) {
     selectedAnswers.add(answer);
 
-    if (selectedAnswers.length == questions[language]!.length) {
+    if (selectedAnswers.length == 6) {
       setState(() {
         activeScreen = 'result-screen';
       });

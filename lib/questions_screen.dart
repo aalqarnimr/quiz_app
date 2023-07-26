@@ -18,6 +18,12 @@ class QuestionsScreen extends StatefulWidget {
 class _QuestionsScreenState extends State<QuestionsScreen> {
   var questionNumber = 0;
 
+  @override
+  void initState() {
+    questionsList.shuffle();
+    super.initState();
+  }
+
   void nextQuestion(String selectedAnswer) {
     widget.onSelectAnswer(selectedAnswer);
     setState(() {

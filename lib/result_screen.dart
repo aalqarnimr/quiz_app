@@ -40,7 +40,7 @@ class ResultScreen extends StatelessWidget {
             Text(
               currentLanguage == "English"
                   ? "You answered $numCorrectQuestions out of $numTotalQuestions questions correctly!"
-                  : "مبروك! اجبت على $numCorrectQuestions من اصل $numTotalQuestions أسئلة بشكل صحيح",
+                  : "مبروك! اجبت على $numCorrectQuestions من اصل 6 أسئلة بشكل صحيح",
               style: const TextStyle(
                 color: Color.fromARGB(199, 255, 255, 255),
                 fontSize: 20,
